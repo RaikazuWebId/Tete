@@ -38,7 +38,7 @@ clear
 
 cat > /etc/systemd/system/kyt.service << END
 [Unit]
-Description=Simple kyt - @kyt
+Description=Simple kyt - @RAIKAZUSTORE
 After=network.target
 
 [Service]
@@ -69,5 +69,5 @@ clear
 echo " Installations complete, type /menu on your bot"
 rm -rf kyt.sh
 rm -rf bot.zip
-read " Klik [ Enter ] Kembali ke menu "
+read -p " Klik [ Enter ] Kembali ke menu "
 menu
